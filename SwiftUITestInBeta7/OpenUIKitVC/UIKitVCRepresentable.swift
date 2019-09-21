@@ -13,7 +13,7 @@ import UIKit
 struct UIKitVCRepresentable : UIViewControllerRepresentable {
     func makeUIViewController(context: UIViewControllerRepresentableContext<UIKitVCRepresentable>) -> UIViewController {
         let vc = UIKitViewController()
-        vc.dataSource = context.coordinator as? UIKitViewControllerDelegate
+        vc.dataSource = context.coordinator as UIKitViewControllerDelegate
         return vc
     }
     
