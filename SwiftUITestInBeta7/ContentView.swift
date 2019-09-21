@@ -9,8 +9,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    let userModel = UserData()
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            List {
+                Section() {
+                    NavigationLink(destination: ViewsTest()) {
+                          Text("View test")
+                    }
+                    NavigationLink(destination: StackTest()) {
+                         Text("UI Stack")
+                    }
+                    NavigationLink(destination: FormTest()) {
+                         Text("Form test")
+                    }
+                    NavigationLink(destination: WebViewTest()) {
+                        Text("WebView")
+                    }
+                    NavigationLink(destination: OpenUIKitVCTest()) {
+                        Text("Open UIKitVC")
+                    }
+                    NavigationLink(destination: DataFlowTest()) {
+                        Text("DataFlow")
+                    }
+                    NavigationLink(destination: DataFlowModelTest().environmentObject(userModel)) {
+                        Text("DataFlow model")
+                    }
+                    NavigationLink(destination: DataFlowModelTest2().environmentObject(userModel)) {
+                        Text("DataFlow model 2")
+                    }
+                    NavigationLink(destination: AnimationTest().environmentObject(userModel)) {
+                        Text("AnimationTest")
+                    }
+                    
+                }
+            }
+        }
     }
 }
 
