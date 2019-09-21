@@ -26,7 +26,7 @@ struct ContentView: View {
                     NavigationLink(destination: WebViewTest()) {
                         Text("WebView")
                     }
-                    NavigationLink(destination: OpenUIKitVCTest()) {
+                    NavigationLink(destination: UIKitVCRepresentable()) {
                         Text("Open UIKitVC")
                     }
                     NavigationLink(destination: DataFlowTest()) {

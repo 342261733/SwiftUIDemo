@@ -27,10 +27,8 @@ struct WebViewTest : UIViewRepresentable {
     }
 }
 
-#if DEBUG
 struct WebViewTest_Previews : PreviewProvider {
     static var previews: some View {
         WebViewTest()
     }
 }
-#endif

@@ -53,9 +53,5 @@ class UIKitViewController: UIViewController {
         self.dataSource?.vcCallBack()
         self.dataSource?.vcOptionalCallBack?()
     }
-//    @objc func openContentView() {
-//        let hostVC = UIHostingController(rootView: ContentView())
-//        present(hostVC, animated: true, completion: nil)
-//    }
     
 }

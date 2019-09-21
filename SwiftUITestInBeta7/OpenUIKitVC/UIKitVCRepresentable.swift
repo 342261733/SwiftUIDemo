@@ -41,3 +41,9 @@ struct UIKitVCRepresentable : UIViewControllerRepresentable {
         }
     }
 }
+
+struct UIKitVCRepresentable_Previews : PreviewProvider {
+    static var previews: some View {
+        UIKitVCRepresentable()
+    }
+}
